@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="header-h1">Conversor <span class="header-span">de Temperatura</span></h1>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="container-section">
+                <h1 class="container-h1">Temperatura</h1>
+                <p class="container-p">
+                    A temperatura é uma das principais características que determina o estado térmico de um objeto ou sistema, podendo ser quente, frio ou em equilíbrio térmico com outros objetos
+                </p>
+            </div>
+
+            <div class="main-select">
+                <input class="main-select--input" type="text" value=" " placeholder="Temperatura">
+
+                <select name="" id="main-select-first"  >
+                    <option value="Fahrenheit" data='0'>Fahrenheit (F)</option>
+                    
+                    <option 
+                    value="Celsius" data="1">Celsius (C)</option>        
+                </select>
+                
+                <select name="" id="main-select-second">
+                    <option value="Celsius-1" data="2">Celsius (C)</option>
+                    <option
+                    value="Fahrenheit-1" data="3">Fahrenheit (F)</option>
+                </select>
+            </div>
+
+            <button onclick="converter()" class="container-button">Converter</button>
+        </div>
+
+        <div class="container">
+            <div class="amostra-resultado"></div>
+        </div>
+
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
