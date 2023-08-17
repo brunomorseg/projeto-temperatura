@@ -48,3 +48,21 @@
         padding: 3px;
     
     }
+
+
+    @media(max-width:400px) {
+        .container-h1 {
+            text-align: center;
+        }
+
+        .container-section {
+            width: auto;
+        }
+        .container-p {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            text-align: justify;
+
+        }
+    }
